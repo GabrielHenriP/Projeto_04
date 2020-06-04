@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    src: url(../fontes/Montserrat/Montserrat-Regular.ttf);
+    font-family: 'montserrat';
+}
+
+.center {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*#######################  HEADER  ############################*/
+
+header {
+    padding: 20px 2%;
+}
+
+header .logo img {
+    float: left;
+    width: 236px;
+}
+
+header .menu-mobile {
+    display: none;
+}
+
+header .menu-desktop {
+    float: right;
+    padding-top: 10px;
+}
+
+header .menu-desktop ul {
+    list-style-type: none;
+}
+
+.menu-desktop ul li {
+    float: left;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-right: 20px;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    /*color: rgb(168, 5, 5);*/
+    color: rgb(19, 168, 5);
+}
+/*#############################################################*/
+
+
+
+/*#####################  SESSAO MOSAICO  ######################*/
+
+.mosaico-2unidades {
+    float: left;
+    width: calc(100%/6);
+}
+
+.mosaico-imagem {
+    width: 100%;
+    padding-top: 100%;
+    background-color: rgb(197, 123, 212);
+    border: 5px solid rgb(19, 18, 18);
+}
+/*#############################################################*/
+
+
+
+/*#####################  SESSAO SERVICOS  #####################*/
+
+section.servicos .center {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    text-align: center;
+    color: white;
+    font-family: 'montserrat';
+}
+
+section.servicos .box {
+    background-image: url(../imagens/icone_dente.png);
+    background-size: 16px 16px;
+    background-position: center calc(100% - 8px);
+    background-repeat: no-repeat;
+}
+
+section.servicos .box:nth-of-type(1) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: rgb(1, 88, 88);
+    text-align: justify;
+    font-size: 13px;
+}
+
+section.servicos .box:nth-of-type(2) {
+    width: 40%;
+    padding: 60px 1%;
+    background-color: teal;
+    background-size: 24px 24px;
+}
+
+section.servicos .box:nth-of-type(3) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: rgb(1, 88, 88);
+    text-align: justify;
+    font-size: 13px;
+}
+
+section.servicos .box h2 {
+    padding-bottom: 15px;
+}
+/*#############################################################*/
+
+
+
+/*#####################  SESSAO PERFIL  #####################*/
+
+section.perfil .wraper_1 {
+    width: 100%;
+    padding-top: 40%;
+    background-color: turquoise;
+    position: relative;
+}
+
+section.perfil .wraper_2 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    background-color: teal;
+    padding: 5px 2%;
+    border-radius: 10px;
+    color: white;
+    font-family: 'montserrat';
+}
+
+section.perfil .center {
+    max-width: 800px;
+}
+
+section.perfil .wraper_2 .imagem {
+    width: 40%;
+    height: 98%;
+    background-image: url('../imagens/foto-autor.jpg');
+    background-size: 100% 100%;
+}
+
+section.perfil .wraper_2 .texto {
+    padding-left: 2%;
+    width: 70%;
+}
+
+.wraper_2 h2 {
+    padding-bottom: 20px;
+}
+/*#############################################################*/
+
+
+
+/*#####################  SESSAO VIDEOS  #####################*/
+
+section.videos {
+    padding: 10px 2%;
+}
+
+section.videos > .center {
+    max-width: 1300px;
+}
+
+section.videos .box {
+    float: left;
+    width: 33%;
+    padding-top: 30%;
+    border: 10px solid white;
+    position: relative;
+}
+
+section.videos .box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*#############################################################*/
+
+
+
+/*#################  SESSAO bOLOCOS DETEXTO  #################*/
+
+section.blocos_deTexto > .center > h1 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 92, 128);
+    padding: 50px 0 30px 0 ;
+}
+
+section.blocos_deTexto .texto-3unidades {
+    float: left;
+    width: calc(100%/3);
+    font-family: 'montserrat';
+    color: rgb(27, 56, 83);
+}
+
+.texto-single {
+    padding: 30px 10px;
+}
+
+.texto-single h2 {
+    padding-bottom: 15px;
+}
+/*#############################################################*/
+
+
+
+/*####################  SESSAO DEPOIMENTOS  ###################*/
+
+section.depoimentos {
+    font-family: 'montserrat';
+    padding:  0 2% 2% 40px;
+}
+
+section.depoimentos > .center > h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 92, 128);
+    padding: 50px 0 30px 0 ;
+}
+
+section.depoimentos > .center {
+    text-align: center;
+    max-width: 400px;
+    
+}
+
+.depoimentos-single p {
+    font-size: 18px;
+    color: #b4b4b4;
+    padding-bottom: 20px;
+}
+
+.foto-nome {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 37%;
+}
+
+.foto-nome img {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+ }
+
+.foto-nome span {
+    margin: 0 auto;
+    
+ }
+/*#############################################################*/
+
+
+
+/*######################  SESSAO SOCIAL  ######################*/
+
+section.social {
+    text-align: center;
+    font-family: 'montserrat';
+    color: white ;
+}
+
+.instagram {
+    background-color: #98a5ae;
+    padding: 50px 2%;
+    font-size: 18px;
+}
+
+.instagram img, .facebook img {
+    padding-bottom: 15px;
+}
+
+.instagram p, .facebook p {
+    padding-bottom: 7px;
+}
+
+.instagram a{
+    color: rgb(42, 42, 88);
+    text-decoration: none;
+}
+
+.mosaico {
+    text-align: center;
+}
+
+.mosaico .img-social {
+    display: inline-block;
+    width: calc(100%/5.5);
+    padding-top: calc(100%/5.5);
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: blueviolet;
+}
+
+.facebook {
+    background-color: #576975;
+    padding: 50px 2%;
+    font-size: 18px;
+}
+
+.facebook a {
+    text-decoration: none;
+    color: rgb(145, 235, 229);
+}
+/*#############################################################*/
+
+
+
+/*######################  SESSÃO CONTATO  #####################*/
+section.contato {
+    width: 100%;
+    padding: 0px 5%;
+}
+
+section.contato > .center {
+    width: 100%;
+    padding: 50px 2%;
+    background-color: rgb(148, 180, 240);
+    text-align: center;
+    font-family: 'montserrat';
+}
+
+.formulario {
+    display: inline-block;
+    text-align: left;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    width: 95%;
+    max-width: 400px;
+}
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    float: left;
+    width: 50%;
+    border: 2px solid  rgb(148, 180, 240);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+form input[type=submit] {
+    background-color: rgb(75, 117, 117);
+    width: 120px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    transition: 0.6s;
+    background-color: darkturquoise;
+    color: black;
+}
+
+form .w100:last-child {
+    text-align: center;
+}
+
+/*#############################################################*/
+
+
+
+/*##########################  FOOTER  #########################*/
+
+footer {
+    padding: 60px 3%;
+    background-color: #303a41;
+    color: white;
+}
+
+footer .box {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 0px 2%;
+}
+
+footer .box h2 {
+    padding-bottom: 10px;
+}
+/*#############################################################*/
+
+
+@media screen and (max-width: 1200px){
+    .mosaico .img-social {
+        width: calc(100%/5.2);
+        padding-top: calc(100%/5.2);
+    }
+}
+
+
+
+@media screen and (max-width: 950px){
+    section.videos .box {
+        width: 45%;
+    }
+    section.videos {
+        text-align: center;
+    }
+
+    section.videos .box {
+        float: none;
+        display: inline-block;
+        border: 5px solid white;
+        width: 49%;
+        padding-top: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    header {
+        text-align: center;
+    }
+
+    header .logo img {
+        float: none;
+        width: 236px;
+    }
+    
+    header .menu-desktop {
+        float: none;
+        display: inline-block;
+        padding: 30px 0 20px 0;
+        
+    }
+    /*#########################################*/
+
+    section.servicos .center {
+        flex-direction: column;
+    }
+    
+    section.servicos .box:nth-of-type(1) {
+        width: 93%;
+    }
+
+    section.servicos .box:nth-of-type(2) {
+        width: 96%;
+        padding: 60px 1%;
+    }
+
+    section.servicos .box:nth-of-type(3) {
+        width: 93%;
+    }
+    /*#########################################*/
+
+    section.perfil .wraper_1 {
+        padding-top: 2%;
+    }
+
+    section.perfil .wraper_2 {
+        display: inline-block;
+        text-align: center;
+        position: static;
+        width: 90%;
+        transform: translateX(5%);
+        
+    }
+
+    section.perfil .wraper_1 .imagem {
+        display: inline-block;
+        width: 70%;
+        padding-top: 80%;
+    }
+
+    section.perfil .wraper_1 .texto {
+        display: inline-block;
+        width: 70%;
+        padding: 10px 20px;
+    }
+    /*#########################################*/
+
+    section.videos .box {
+        width: 70%;
+        padding-top: 60%;
+    }
+    /*#########################################*/
+
+    .mosaico .img-social {
+        width: calc(100%/3.1);
+        padding-top: calc(100%/3.1);
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    header .menu-desktop {
+        display: none;
+    }
+
+    header .menu-mobile {
+        display: block;
+    }
+
+    header .menu-mobile {
+        float: right;
+        width: 30px ;
+        height: 30px;
+        background-image: url('../imagens/menu-mobile.png');
+        background-size: 100% 100%;
+        margin: 10px 0px;
+    }
+
+    header .menu-mobile ul {
+        list-style-type: none;
+        position: absolute;
+        left: 0;
+        top: 104px;
+        width: 100%;
+    }
+
+    .menu-mobile ul li {
+        text-transform: uppercase;
+        font-size: 13px;
+        background-color: rgb(195, 194, 226);
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+        border-bottom: 1px solid black;
+        padding: 10px ;
+    }
+
+    .menu-mobile ul li a {
+        text-decoration: none;
+        color: rgb(19, 168, 5);
+    }
+    /*#########################################*/
+
+    section.mosaico {
+        margin-top: 150px;
+    }
+    /*#########################################*/
+
+    section.perfil .wraper_2 .texto {
+        width: 95%;
+    }
+    /*#########################################*/
+
+    section.videos .box {
+        width: 100%;
+        padding-top: 80%;
+    }
+    /*#########################################*/
+    section.blocos_deTexto .texto-single {
+        font-size: 12px;
+        text-align: justify;
+        width: 95%;
+    }
+    /*#########################################*/
+
+    .mosaico .img-social {
+        width: calc(100%/2.1);
+        padding-top: calc(100%/2.1);
+    }
+    /*#########################################*/
+
+    footer .box {
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+        padding: 10px 2%;
+    }
+}
