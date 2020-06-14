@@ -553,6 +553,7 @@ footer .box h2 {
     }
 
     header .menu-mobile ul {
+        display: none;
         list-style-type: none;
         position: absolute;
         left: 0;
