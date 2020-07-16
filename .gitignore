@@ -12,3 +12,5 @@ node_modules/@types/sizzle/index.d.ts
 node_modules/@types/sizzle/LICENSE
 node_modules/@types/sizzle/package.json
 node_modules/@types/sizzle/README.md
+js/slick.js
+css/slick.css
